@@ -31,3 +31,14 @@ function checkPassword() {
   }
 
 }
+
+// FOR HEADER BACKGROUND 
+ const header = document.getElementById("header");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    header.classList.add("bg-black", "shadow-lg");
+                } else {
+                    header.classList.remove("bg-black", "shadow-lg");
+                }
+            });

@@ -21,7 +21,8 @@
 <body class="bg-black overflow-x-hidden">
 
   <!-- HEADER -->
-  <div class="flex justify-around gap-4 p-2 m-5">
+  <div id="header"
+    class="flex justify-around items-center gap-4 p-2 m-5 border-[1px] border-white rounded-lg sticky top-0 z-50">
 
 
     <!-- LOGO -->
@@ -31,24 +32,24 @@
 
 
     <!-- HEADRE TEXT-->
-    <div class="flex flex-row gap-8 text-white md:gap-10">
+    <div class="flex flex-row gap-8 text-white cursor-pointer  md:gap-10">
 
-      <a class="hidden sm:flex " href="#">Home</a>
-      <i class="bi bi-house-fill flex sm:hidden"></i>
+      <a class="hidden hover:text-orange-700 sm:flex " href="#">Home</a>
+      <i class="bi bi-house-fill flex hover:text-orange-700  sm:hidden"></i>
 
 
-      <a class="hidden sm:flex" href="#">Features</a>
-      <i class="bi bi-graph-up-arrow text-primary fs-1 flex sm:hidden"></i>
+      <a class="hidden hover:text-orange-700  sm:flex" href="#">Features</a>
+      <i class="bi bi-graph-up-arrow text-primary fs-1 flex hover:text-orange-700  sm:hidden"></i>
 
-      <a class="hidden sm:flex" href="#">About us</a>
-      <i class="bi bi-people fs-1 text-primary flex sm:hidden"></i>
+      <a class="hidden hover:text-orange-700  sm:flex" href="#">About us</a>
+      <i class="bi bi-people fs-1 text-primary flex hover:text-orange-700  sm:hidden"></i>
 
     </div>
 
 
     <!-- BUTTON -->
     <div
-      class="flex flex-row items-center justify-center gap-6 text-white md:hover:bg-red-700 md:px-2 md:rounded-lg md:py-2">
+      class="flex flex-row items-center justify-center gap-6 text-white bg-orange-700 sm:bg-transparent sm:hover:bg-orange-700 px-2 rounded-lg py-2">
       <button id="loginbtns">Sign up</button>
     </div>
 
@@ -61,10 +62,10 @@
   <div class="modula fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50 ">
 
     <div class="flex justify-center items-center h-screen">
-      <div class="bg-black relative border-[1px] border-white w-[80%] h-auto rounded px-4 py-2 md:w-[30%]">
+      <div class="bg-black relative border-[1px] border-white w-[60%] h-auto rounded-lg px-4 py-2 md:w-[30%]">
 
         <!-- CLOSE BUTTON -->
-        <button id="closebtns" class="absolute right-3 top-3  text-lg text-white">
+        <button id="closebtns" class="absolute right-3 top-3  text-lg text-white border-white border-[1px] px-2  rounded flex items-center w-fit sm:hover:bg-orange-700 sm:hover:text-white sm:border-none ">
           ✕
         </button>
 
@@ -79,7 +80,33 @@
           <!-- PASSWORD FORM -->
           <input type="password" form="password" id="password" placeholder="enter your password ....."
             class="px-4 h-[35px] rounded font-semi-bold outline-none text-lg">
-        </div>
+        
+        
+            <!-- PASSWORD FORM -->
+          <input type="password" form="password" id="password" placeholder="enter your password ....."
+            class="px-4 h-[35px] rounded font-semi-bold outline-none text-lg">
+
+
+            <!-- PASSWORD FORM -->
+          <input type="password" form="password" id="password" placeholder="enter your password ....."
+            class="px-4 h-[35px] rounded font-semi-bold outline-none text-lg">
+
+
+            <!-- PASSWORD FORM -->
+          <input type="password" form="password" id="password" placeholder="enter your password ....."
+            class="px-4 h-[35px] rounded font-semi-bold outline-none text-lg">
+
+
+            <!-- PASSWORD FORM -->
+          <input type="password" form="password" id="password" placeholder="enter your password ....."
+            class="px-4 h-[35px] rounded font-semi-bold outline-none text-lg">
+        
+        
+        
+          </div>
+
+
+        
 
 
 
@@ -87,13 +114,13 @@
         <!-- LOGIN BUTTON-->
         <div class="flex justify-center items-center md:mt-3">
           <button onclick="checkPassword()"
-            class="text-white border-white border-[1px] px-4 py-2 rounded flex w-fit">Login</button>
+            class="text-white border-white border-[1px] px-4 py-2 rounded flex items-center w-fit sm:hover:bg-orange-700 sm:hover:text-white sm:border-none">Sign up</button>
         </div>
         <p id="result"></p>
 
         <div class="flex flex-row items-center justify-center mt-2 gap-10 text-white">
           <p class="border-b-[1px] border-white cursor-pointer">Forget password?</p>
-          <button class="hover:border-[1px] hover:border-white px-4 rounded">Sign up</button>
+          <button class="hover:border-[1px] hover:border-white px-4 rounded">Login</button>
         </div>
 
       </div>
@@ -109,7 +136,7 @@
     <div class="flex flex-col gap-4 text-white">
       <h1 class="text-[30px] font-bold">Smart <span class="text-orange-700">earning</span></h1>
       <h3 class="text-[25px] font-semibold"><span class="text-orange-700">Smart</span> investing</h3>
-      <p class="font-sm text-base">Smarter Business Management Starts Here.
+      <p class="font-sm text-sm">Smarter Business Management Starts Here.
         Draft gives you the tools you need to run your business smoothly, monitor your income and expenses,
         <br>
         and grow
@@ -118,7 +145,7 @@
 
       <!-- BUTTON -->
       <div
-        class="flex items-center justify-center gap-6   text-white sm:hover:bg-red-700 sm:px-2 sm:rounded-lg w-fit sm:h-[45px]">
+        class="flex items-center justify-center gap-6   text-white bg-orange-700 sm:bg-transparent sm:hover:bg-orange-700 px-2 rounded-lg w-fit h-[45px]">
         <button id="loginbtns">Sign up &nbsp; <i class="bi bi-arrow-right"></i></button>
       </div>
 
@@ -127,12 +154,13 @@
 
 
     <!-- HERO IMAGE -->
-    <div class="relative flex   items-center">
-      <img class="object-contain w-[500px] h-[450px] lg:w-[587px] " src="./image/Phone 1.png" alt="">
+    <div class="relative flex justify-center  items-center">
+      <img class="object-contain
+      w-[80%] " src="./image/Phone 1.png" alt="">
 
 
 
-      
+
       <!-- IMAGE 2 -->
       <div class="absolute right-0 bottom-[10rem]">
         <img class="object-contain h-[85px] sm-[5%] lg:h-[114px]" src="./image/chat2.png" alt="">
@@ -154,8 +182,10 @@
   <div class="flex flex-col mt-[2rem]  items-center m-8 gap-4   text-white  sm:justify-around sm:flex-row sm:mt-2">
 
     <div class="flex flex-col gap-4">
-      <h2 class="text-[24px] font-bold text-orange-700">One card <span class="text-white">for all your</span>  payments</h2>
-      <p cclass="font-sm text-base">Get <span class="text-orange-700 font-bold text-base font-sm">3% </span>back on everything you buy with the Draft card.
+      <h2 class="text-[24px] font-bold text-orange-700">One card <span class="text-white">for all your</span> payments
+      </h2>
+      <p cclass="font-sm text-sm">Get <span class="text-orange-700 font-bold text-base font-sm">3% </span>back on
+        everything you buy with the Draft card.
         <br>
         Register today and enjoy aspect of your business ...
       </p>
@@ -163,7 +193,7 @@
 
     <!-- IMAGE SECTION-->
     <div class="flex flex-col gap-2">
-      <img class="object-contain" src="./image/Credit Card.png" alt="">
+      <img class="object-contain w-[85%]" src="./image/Credit Card.png" alt="">
     </div>
   </div>
 
